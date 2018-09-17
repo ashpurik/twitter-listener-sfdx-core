@@ -1,1 +1,1 @@
-web: npm start --port ${PORT:5000}
+web: npm start --port ${PORT:3000}
