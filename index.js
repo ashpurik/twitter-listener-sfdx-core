@@ -2,7 +2,7 @@ global.exit = function exit(code, msg) { console.log(`ERROR: ${msg}`); process.e
 global.missing = function missing(variable) { exit(1, `${variable} environment variable required.`); }
 
 let { twitter, track } = require('./app/twitter');
-let { getOrg } = require('./app/salesforce');
+let { retrieveOrg } = require('./app/salesforce');
 
 let tweetStream = twitter.stream('statuses/filter', { track });
 
@@ -12,7 +12,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 const sendPlatformEvent = async (tweet) => {
-    const org = await getOrg();
+    const org = await retrieveOrg();
     
     try {
         let event = await org.getConnection().sobject('Notification__e').create({'Message__c': tweet.text});

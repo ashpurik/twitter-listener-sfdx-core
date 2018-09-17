@@ -1,7 +1,7 @@
 let { Org } = require('@salesforce/core');
 
 module.exports = {
-    getOrg: async () => { 
+    retrieveOrg: async () => { 
         return await Org.create();
     }
 };

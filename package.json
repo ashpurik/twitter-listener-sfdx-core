@@ -16,10 +16,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Amorelandra/twitter-salesforce-stream.git"
+    "url": "git+https://github.com/ashpurik/twitter-listener-sfdx-core.git"
   },
   "bugs": {
-    "url": "https://github.com/Amorelandra/twitter-salesforce-stream/issues"
+    "url": "https://github.com/ashpurik/twitter-listener-sfdx-core/issues"
   },
-  "homepage": "https://github.com/Amorelandra/twitter-salesforce-stream#readme"
+  "homepage": "https://github.com/ashpurik/twitter-listener-sfdx-core#readme"
 }
