@@ -6,6 +6,14 @@ let { org, force } = require('./app/salesforce');
 
 let tweetStream = twitter.stream('statuses/filter', { track });
 
+const express = require('express')
+const app = express()
+const port = process.env.PORT || 3000
+
+app.get('/', (req, res) => res.send('Web disabled'))
+
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+
 tweetStream.on('tweet', (tweet) => {
     if(!org.authenticated) { return; }
     
