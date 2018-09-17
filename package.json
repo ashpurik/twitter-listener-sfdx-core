@@ -9,8 +9,8 @@
   "author": "Anastasia Shpurik <ashpurik@salesforce.com>",
   "license": "BSD-3-Clause",
   "dependencies": {
+    "@salesforce/core": "^0.21.0",
     "express": "^4.16.3",
-    "nforce": "https://github.com/jthurst01/nforce/tarball/master",
     "twit": "^2.2.9"
   },
   "devDependencies": {},
